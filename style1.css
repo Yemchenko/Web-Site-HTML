@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    background-color:  #F8F8F8 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #f4c107;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    z-index: 1000;
+    border-radius: 100px 100px 100px 100px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+
+
+}
+
+.navbar__logo img {
+    height: 50px;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    background-color: #fff;
+    color: #f4c107;
+}
+
+.whyme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    padding-top: 6%;
+   
+}
+
+.whymetext {
+    max-width: 50%;
+    max-width: 580px;
+    max-height: 526px;
+    padding-left: 50px;
+}
+
+.whymetitle {
+    font-size: 46px;
+    color: #aaa;
+    font-weight:normal;
+    padding-bottom: 80px;
+}
+
+.whymetitle1 {
+    font-size: 2.5rem;
+    font-weight:normal;
+    margin-bottom: 20px;
+}
+
+.whymep {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+.button {
+    background-color: #ffd700;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #f4c107;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.block4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 40%;
+    justify-content: space-between;
+    padding-right: 140px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(48% - 10px); 
+    box-sizing: border-box;
+    max-width: calc(48% - 10px);
+    max-height: 250px;
+}
+
+
+.card:nth-child(1) {
+    margin-top: 60px; 
+}
+
+.card:nth-child(3) {
+    margin-top: 60px; 
+}
+
+
+.card:nth-child(2) {
+    margin-bottom: 60px; 
+}
+
+.card:nth-child(4) {
+    margin-bottom: 60px; 
+}
+
+.card__icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card__description {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.creative-work {
+    padding: 50px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .creative-work__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .creative-work__gallery {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .gallery-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item--large {
+    height: 200px;
+    width: 300px;
+    margin-left: 35px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .creative-work__info {
+    flex: 0 0 35%; 
+    margin-top: 40px;
+  }
+  
+  .creative-work__info h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    line-height: 60px;
+  }
+  
+  .creative-work__info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+  }
+ 
+.work-filter {
+    background-color: #fff; 
+    padding: 0 40px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 350px; 
+    margin-top: 30px;
+  }
+  
+li {
+  padding: 20px;
+
+}
